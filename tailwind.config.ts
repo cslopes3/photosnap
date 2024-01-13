@@ -28,6 +28,14 @@ const config: Config = {
                         fontWeight: '700',
                     },
                 ],
+                'h1-mobile': [
+                    '2rem',
+                    {
+                        lineHeight: '3rem',
+                        letterSpacing: '0.2604rem',
+                        fontWeight: '700',
+                    },
+                ],
                 h2: [
                     '1.5rem',
                     {
@@ -61,6 +69,9 @@ const config: Config = {
                         letterSpacing: '0.125rem',
                     },
                 ],
+            },
+            spacing: {
+                '18': '4.5rem',
             },
             textColor: {
                 primary: '#000000',
