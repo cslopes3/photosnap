@@ -31,7 +31,7 @@ export default function Home() {
                             key={card.id}
                             title={card.title}
                             author={card.author}
-                            imagesUrl={card.imagesUrl}
+                            imageUrl={card.imageUrl}
                         />
                     );
                 })}
