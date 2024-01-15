@@ -43,6 +43,13 @@ const config: Config = {
                         fontWeight: '700',
                     },
                 ],
+                'h2-mobile': [
+                    '0.9375rem',
+                    {
+                        letterSpacing: '0.15625rem',
+                        fontWeight: '700',
+                    },
+                ],
                 h3: [
                     '1.125rem',
                     {
