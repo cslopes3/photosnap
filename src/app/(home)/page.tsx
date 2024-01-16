@@ -40,7 +40,7 @@ export default function Home() {
                     );
                 })}
             </section>
-            <section className="w-3/4 mx-auto mt-20 grid gap-14 max-w-6xl sm:gap-20 sm:mt-28 lg:w-4/5 lg:grid-cols-3 lg:gap-8">
+            <section className="w-3/4 mx-auto py-20 grid gap-14 max-w-6xl sm:gap-20 sm:py-28 lg:w-4/5 lg:grid-cols-3 lg:gap-8">
                 {features.map((feature) => {
                     return (
                         <Feature

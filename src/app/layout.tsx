@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 
 import './globals.css';
+import { Footer } from './components/footer';
 import { Header } from './components/header';
 
 import { Providers } from 'providers/providers';
@@ -23,6 +24,7 @@ export default function RootLayout({
                 <body className={`${dmSans.className} bg-primary`}>
                     <Header />
                     {children}
+                    <Footer />
                 </body>
             </Providers>
         </html>
