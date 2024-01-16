@@ -77,6 +77,12 @@ const config: Config = {
                     },
                 ],
             },
+            gridTemplateColumns: {
+                '2-1': '2fr 1fr',
+                '1-2': '1fr 2fr',
+                '3-2': '3fr 2fr',
+                '2-3': '2fr 3fr',
+            },
             spacing: {
                 '18': '4.5rem',
             },

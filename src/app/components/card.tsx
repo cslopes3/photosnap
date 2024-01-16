@@ -21,6 +21,7 @@ type CardProps = {
     bodyText: string;
     linkText: string;
     theme: themeType;
+    imgOnRight: boolean;
 };
 
 export function Card({
@@ -29,23 +30,44 @@ export function Card({
     bodyText,
     linkText,
     theme,
+    imgOnRight,
 }: CardProps) {
     const themeClasses =
         theme === 'light' ? 'bg-primary text-primary' : 'bg-alt text-alt';
 
+    console.log(imgOnRight);
+
     return (
-        <article className="grid">
+        <article
+            className={`grid ${
+                imgOnRight === true
+                    ? 'sm:grid-cols-2-1 xl:grid-cols-2-3'
+                    : 'sm:grid-cols-1-2 xl:grid-cols-3-2'
+            }`}
+        >
             <picture>
-                <source media="(min-width:1024px)" srcSet={imagesUrl.desktop} />
-                <source media="(min-width:768px)" srcSet={imagesUrl.tablet} />
-                <img className="w-full" src={imagesUrl.mobile} alt="" />
+                <source media="(min-width:1280px)" srcSet={imagesUrl.desktop} />
+                <source media="(min-width:640px)" srcSet={imagesUrl.tablet} />
+                <img
+                    className="w-full h-full object-cover"
+                    src={imagesUrl.mobile}
+                    alt=""
+                />
             </picture>
 
-            <div className={`py-18 px-8 ${themeClasses}`}>
-                <h2 className="text-h1-mobile uppercase">{title}</h2>
-                <p className="text-body opacity-60 mt-4 mb-6">{bodyText}</p>
+            <div
+                className={`flex flex-col justify-center py-18 px-8 ${themeClasses} ${
+                    imgOnRight === true ? 'sm:order-first' : ''
+                } sm:py-0 sm:px-14 xl:px-28`}
+            >
+                <h2 className="text-h1-mobile uppercase sm:text-h1">{title}</h2>
+                <p className="text-body opacity-60 mt-4 mb-6 sm:mt-5 sm:mb-12">
+                    {bodyText}
+                </p>
                 <Link className="flex gap-5 text-h4 uppercase" href={''}>
-                    <h4>{linkText}</h4>
+                    <h4 className="text-h4 transition-all hover:underline">
+                        {linkText}
+                    </h4>
                     <Arrow />
                 </Link>
             </div>

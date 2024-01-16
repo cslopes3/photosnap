@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <main>
             <section>
-                {cards.map((card) => {
+                {cards.map((card, index) => {
                     return (
                         <Card
                             key={card.id}
@@ -23,6 +23,7 @@ export default function Home() {
                             bodyText={card.bodyText}
                             linkText={card.textLink}
                             theme={card.theme as themeType}
+                            imgOnRight={index % 2 === 0}
                         />
                     );
                 })}
