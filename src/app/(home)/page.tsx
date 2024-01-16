@@ -12,7 +12,7 @@ export default function Home() {
     const features = getFeatures(3);
 
     return (
-        <main>
+        <main className="max-w-screen-2xl mx-auto">
             <section>
                 {cards.map((card, index) => {
                     return (
@@ -28,7 +28,7 @@ export default function Home() {
                     );
                 })}
             </section>
-            <section>
+            <section className="flex flex-wrap">
                 {storyCards.map((card) => {
                     return (
                         <StoryCard
@@ -40,7 +40,7 @@ export default function Home() {
                     );
                 })}
             </section>
-            <section className="w-3/4 mx-auto grid gap-14 sm:gap-20 max-w-6xl lg:w-4/5 lg:grid-cols-3 lg:gap-8">
+            <section className="w-3/4 mx-auto mt-20 grid gap-14 max-w-6xl sm:gap-20 sm:mt-28 lg:w-4/5 lg:grid-cols-3 lg:gap-8">
                 {features.map((feature) => {
                     return (
                         <Feature

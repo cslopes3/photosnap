@@ -35,8 +35,6 @@ export function Card({
     const themeClasses =
         theme === 'light' ? 'bg-primary text-primary' : 'bg-alt text-alt';
 
-    console.log(imgOnRight);
-
     return (
         <article
             className={`grid ${

@@ -11,7 +11,7 @@ export function StoryCard({ title, author, imageUrl }: StoryCardProps) {
     return (
         <>
             <article
-                className="relative text-alt w-full bg-cover bg-center transition-all sm:w-2/4 lg:w-1/4)]
+                className="relative text-alt w-full bg-cover bg-center transition-all sm:w-2/4 lg:w-1/4
                         hover:bottom-5 hover:after:bg-main-accent hover:after:w-full hover:after:absolute hover:after:h-[0.375rem]"
                 style={{
                     backgroundImage: `url(${imageUrl})`,

@@ -8,7 +8,7 @@ type FeaturesProps = {
 
 export function Feature({ title, text, imageUrl }: FeaturesProps) {
     return (
-        <article className="grid gap-12">
+        <article className="grid gap-12 max-w-md mx-auto">
             <div className="mx-auto h-18 grid items-center">
                 <Image src={imageUrl} width={72} height={72} alt="" />
             </div>
