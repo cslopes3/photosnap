@@ -1,6 +1,6 @@
-import { Card, themeType } from 'app/components/card';
+import { Card, themeType } from 'components/card';
 import { Feature } from 'app/components/feature';
-import { StoryCard } from 'app/components/story-card';
+import { StoryCard } from 'components/story-card';
 
 import { getCards } from 'app/utils/get-card-data';
 import { getFeatures } from 'app/utils/get-features';

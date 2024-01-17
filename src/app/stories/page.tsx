@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-import { Arrow } from 'app/components/arrow';
-import { StoryCard } from 'app/components/story-card';
+import { Arrow } from 'components/arrow';
+import { StoryCard } from 'components/story-card';
 
 import { getStories } from 'app/utils/get-stories';
 
