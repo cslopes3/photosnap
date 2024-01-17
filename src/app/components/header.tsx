@@ -5,8 +5,8 @@ import { SmallDevicesMenu } from './small-devices-menu';
 
 export function Header() {
     return (
-        <header className="bg-primary z-50 relative">
-            <div className="flex w-5/6 py-7 mx-auto max-w-screen-2xl md:justify-between md:items-center md:w-11/12 lg:w-3/4">
+        <header className="max-w-screen-2xl bg-primary z-50 relative mx-auto">
+            <div className="flex w-5/6 py-7 mx-auto md:justify-between md:items-center md:w-11/12 lg:w-3/4">
                 <div className="flex-grow md:flex-grow-0">
                     <Logo theme="light" />
                 </div>

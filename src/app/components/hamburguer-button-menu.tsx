@@ -17,18 +17,20 @@ export function HamburguerButtonMenu() {
         <>
             {showMenu ? (
                 <Image
+                    className="w-4 h-auto"
                     src={close}
                     alt={''}
-                    width={16}
-                    height={16}
+                    width={0}
+                    height={0}
                     onClick={handleMenu}
                 />
             ) : (
                 <Image
+                    className="w-4 h-auto"
                     src={iconHamburger}
                     alt={''}
-                    width={16}
-                    height={16}
+                    width={0}
+                    height={0}
                     onClick={handleMenu}
                 />
             )}
