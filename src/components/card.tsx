@@ -19,9 +19,9 @@ type CardProps = {
     imagesUrl: ImagesUrl;
     title: string;
     bodyText: string;
-    linkText: string;
     theme: themeType;
     imgOnRight: boolean;
+    linkText?: string;
 };
 
 export function Card({
@@ -62,12 +62,14 @@ export function Card({
                 <p className="text-body opacity-60 mt-4 mb-6 sm:mt-5 sm:mb-12">
                     {bodyText}
                 </p>
-                <Link className="flex gap-5 text-h4 uppercase" href={''}>
-                    <h4 className="text-h4 transition-all hover:underline">
-                        {linkText}
-                    </h4>
-                    <Arrow />
-                </Link>
+                {linkText && (
+                    <Link className="flex gap-5 text-h4 uppercase" href={''}>
+                        <h4 className="text-h4 transition-all hover:underline">
+                            {linkText}
+                        </h4>
+                        <Arrow />
+                    </Link>
+                )}
             </div>
         </article>
     );
