@@ -7,7 +7,7 @@ import { SocialMediaLinks } from './social-media-links';
 
 export function Footer() {
     return (
-        <footer className="bg-alt text-alt grid justify-center gap-8 py-14 max-w-screen-2xl mx-auto sm:grid-cols-2 sm:grid-rows-2 sm:py-16 sm:px-10 lg:gap-0">
+        <footer className="bg-alt text-alt grid justify-center gap-8 py-14 max-w-screen-2xl mx-auto sm:grid-cols-2 sm:grid-rows-2 sm:py-16 sm:px-10 lg:px-40 lg:gap-0">
             <div className="row-span-2 grid gap-8 sm:gap-0 lg:grid-cols-2">
                 <div className="flex justify-center sm:order-1 sm:justify-start">
                     <Logo theme="dark" />
@@ -24,7 +24,7 @@ export function Footer() {
             </div>
 
             <Link
-                className="flex justify-center gap-5 sm:justify-self-end"
+                className="flex justify-center gap-5 sm:justify-self-end transition-all hover:underline"
                 href={''}
             >
                 <h4 className="text-h4 uppercase">Get an invite</h4>
