@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Arrow } from 'components/arrow';
 import { StoryCard } from 'components/story-card';
 
-import { getStories } from 'app/utils/get-stories';
+import { getStories } from 'utils/get-stories';
 
 export default function StoriesPage() {
     const storyCards = getStories();

@@ -2,9 +2,9 @@ import { Card, themeType } from 'components/card';
 import { Feature } from 'components/feature';
 import { StoryCard } from 'components/story-card';
 
-import { getCards } from 'app/utils/get-card-data';
-import { getFeatures } from 'app/utils/get-features';
-import { getStories } from 'app/utils/get-stories';
+import { getCards } from 'utils/get-card-data';
+import { getFeatures } from 'utils/get-features';
+import { getStories } from 'utils/get-stories';
 
 export default function Home() {
     const cards = getCards();

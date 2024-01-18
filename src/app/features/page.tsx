@@ -2,7 +2,7 @@ import { Beta } from 'components/beta';
 import { Card } from 'components/card';
 import { Feature } from 'components/feature';
 
-import { getFeatures } from 'app/utils/get-features';
+import { getFeatures } from 'utils/get-features';
 
 export default function FeaturesPage() {
     const features = getFeatures();
