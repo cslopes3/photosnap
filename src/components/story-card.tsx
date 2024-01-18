@@ -17,7 +17,7 @@ export function StoryCard({ title, author, imageUrl }: StoryCardProps) {
                     backgroundImage: `url(${imageUrl})`,
                 }}
             >
-                <div className="bg-gradient-black pb-10">
+                <div className="bg-gradient-black h-full pb-10">
                     <div className="mx-auto w-mobile-card h-full flex flex-col pt-60 sm:w-default-card sm:pt-[22.5625rem]">
                         <h3 className="text-h3 flex-grow-0 mt-auto">{title}</h3>
                         <span className="text-subtitle mt-1">By {author}</span>
