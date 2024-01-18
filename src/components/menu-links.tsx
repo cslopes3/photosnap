@@ -4,13 +4,13 @@ export function MenuLinks() {
     return (
         <>
             <li className="transition-all hover:opacity-30">
-                <Link href={'/'}>Stories</Link>
+                <Link href={'/stories'}>Stories</Link>
             </li>
             <li className="transition-all hover:opacity-30">
-                <Link href={'/'}>Features</Link>
+                <Link href={'/features'}>Features</Link>
             </li>
             <li className="transition-all hover:opacity-30">
-                <Link href={'/'}>Pricing</Link>
+                <Link href={'/pricing'}>Pricing</Link>
             </li>
         </>
     );
