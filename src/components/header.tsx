@@ -2,6 +2,7 @@ import { HamburguerButtonMenu } from './hamburguer-button-menu';
 import { Logo } from './logo';
 import { MenuLinks } from './menu-links';
 import { SmallDevicesMenu } from './small-devices-menu';
+import { SmallDevicesMenuLinks } from './small-devices-menu-links';
 
 export function Header() {
     return (
@@ -23,7 +24,7 @@ export function Header() {
                 </button>
             </div>
             <SmallDevicesMenu>
-                <MenuLinks />
+                <SmallDevicesMenuLinks />
             </SmallDevicesMenu>
         </header>
     );
