@@ -54,22 +54,36 @@ export function Card({
             </picture>
 
             <div
-                className={`flex flex-col justify-center py-18 px-8 ${themeClasses} ${
+                className={`flex flex-col justify-center py-18 ${themeClasses} ${
                     imgOnRight === true ? 'sm:order-first' : ''
-                } sm:py-0 sm:px-14 xl:px-28`}
+                } sm:py-0`}
             >
-                <h2 className="text-h1-mobile uppercase sm:text-h1">{title}</h2>
-                <p className="text-body opacity-60 mt-4 mb-6 sm:mt-5 sm:mb-12">
-                    {bodyText}
-                </p>
-                {linkText && (
-                    <Link className="flex gap-5 text-h4 uppercase" href={''}>
-                        <h4 className="text-h4 transition-all hover:underline">
-                            {linkText}
-                        </h4>
-                        <Arrow />
-                    </Link>
-                )}
+                <div className="relative px-8 sm:px-14 xl:px-28">
+                    {theme === 'dark' && (
+                        <hr className="absolute border-none -top-18 bg-main-accent w-32 h-[0.375rem] sm:top-0 sm:left-0 sm:w-[0.375rem] sm:h-full" />
+                    )}
+                    <h2 className="text-h1-mobile uppercase sm:text-h1">
+                        {title}
+                    </h2>
+                    <p
+                        className={`text-body opacity-60 mt-4 sm:mt-5 ${
+                            linkText ? 'mb-6 sm:mb-12' : ''
+                        }`}
+                    >
+                        {bodyText}
+                    </p>
+                    {linkText && (
+                        <Link
+                            className="flex gap-5 text-h4 uppercase"
+                            href={''}
+                        >
+                            <h4 className="text-h4 transition-all hover:underline">
+                                {linkText}
+                            </h4>
+                            <Arrow />
+                        </Link>
+                    )}
+                </div>
             </div>
         </article>
     );

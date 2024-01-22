@@ -15,10 +15,10 @@ type PlansProps = {
 export function PlanCard(props: PlansProps) {
     return (
         <article
-            className={`grid gap-10 px-5 pt-14 pb-10 sm:pt-10 sm:px-10 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-16 xl:grid-cols-none xl:pt-14 xl:gap-10 xl:max-w-[21.875rem] ${
+            className={`relative grid gap-10 px-5 pt-14 pb-10 sm:pt-10 sm:px-10 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-16 xl:grid-cols-none xl:pt-14 xl:gap-10 xl:max-w-[21.875rem] ${
                 props.theme == 'light'
                     ? 'bg-[#F5F5F5] text-primary xl:my-6'
-                    : 'bg-alt text-alt xl:pt-20 xl:pb-18'
+                    : 'bg-alt text-alt xl:pt-20 xl:pb-18 before:absolute before:top-0 before:bg-main-accent before:w-full before:h-[0.375rem] before:sm:w-[0.375rem] before:sm:h-full before:xl:w-full before:xl:h-[0.375rem]'
             }`}
         >
             <div className="flex flex-col items-center gap-4 sm:items-start xl:items-center">
